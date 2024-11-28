@@ -22,7 +22,7 @@ st.title("Finetuned LLM Round 2")
 @st.cache_data
 def load_data():
     df = pd.read_csv('LLMNERV2 (1).csv')  # Modify path as needed
-    hallucinations = pd.read_csv('Hallucination Confidence ScoreV2.csv')  # Modify path as needed
+    hallucinations = pd.read_csv('Hallucination Confidence ScoreVV2.csv')  # Modify path as needed
     return df, hallucinations
 
 df, hallucinations = load_data()
@@ -194,7 +194,7 @@ import pandas as pd
 import streamlit as st
 
 # Read the CSV file
-df = pd.read_csv('Hallucination Confidence ScoreV2.csv')
+df = pd.read_csv('Hallucination Confidence ScoreVV2.csv')
 
 # Convert 'Hallucination Confidence Score' from string percentage to float
 df['Hallucination Confidence Score'] = df['Hallucination Confidence Score'].str.rstrip('%').astype('float') / 100
