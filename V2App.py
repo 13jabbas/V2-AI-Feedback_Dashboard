@@ -180,7 +180,7 @@ import pandas as pd
 import streamlit as st
 
 # Read the CSV file
-df = pd.read_csv('Hallucination Confidence Score (4).csv')
+df = pd.read_csv('Hallucination Confidence ScoreV2.csv')
 
 # Convert 'Hallucination Confidence Score' from string percentage to float
 df['Hallucination Confidence Score'] = df['Hallucination Confidence Score'].str.rstrip('%').astype('float') / 100
@@ -303,7 +303,7 @@ from sklearn.metrics import roc_curve, roc_auc_score, f1_score
 import streamlit as st
 
 # Load the CSV data
-df = pd.read_csv('StreamlitRoc (1).csv')
+df = pd.read_csv('StreamlitRoc_V2.csv')
 
 # Define ground truth and predicted probabilities
 y_true = df['hallucination_groundtruth']  # Ground truth (1 for hallucination, 0 for non-hallucination)
