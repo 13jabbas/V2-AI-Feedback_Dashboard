@@ -14,6 +14,9 @@ import webbrowser
 
 import streamlit as st
 
+# Add a big title to the page
+st.title("LLM V2 Results")
+
 st.markdown(
     """
     <a href="https://ai-feedback-dashboard-e8xsakdarzdtr5xs5iycle.streamlit.app/" target="_blank">
