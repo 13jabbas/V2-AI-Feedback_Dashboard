@@ -282,7 +282,7 @@ if len(filtered_df) > (st.session_state['page_number'] + 1) * page_size:
 import streamlit as st
 
 # Set the percentage value
-hallucination_percentage = 68.05
+hallucination_percentage = 11.69
 
 # Add the title and percentage in a circular style
 st.markdown(f"""
@@ -305,7 +305,7 @@ st.markdown(f"""
             margin-bottom: 10px;
         }}
     </style>
-    <div class="title">Percentage of Hallucinations Generated In V1</div>
+    <div class="title">Percentage of Hallucinations Generated In V2</div>
     <div class="circle">{hallucination_percentage}%</div>
 """, unsafe_allow_html=True)
 
