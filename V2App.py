@@ -13,7 +13,7 @@ import plotly.express as px
 @st.cache_data
 def load_data():
     df = pd.read_csv('LLMNERV2 (1).csv')  # Modify path as needed
-    hallucinations = pd.read_csv('Hallucination Confidence Score (4).csv')  # Modify path as needed
+    hallucinations = pd.read_csv('Hallucination Confidence ScoreV2.csv')  # Modify path as needed
     return df, hallucinations
 
 df, hallucinations = load_data()
