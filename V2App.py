@@ -9,6 +9,19 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 
+
+st.markdown(
+    """
+    <a href="https://ai-feedback-dashboard-e8xsakdarzdtr5xs5iycle.streamlit.app/" target="_blank">
+        <button style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">
+            V1LLM Results
+        </button>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Load data
 @st.cache_data
 def load_data():
