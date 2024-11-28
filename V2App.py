@@ -15,18 +15,8 @@ import webbrowser
 import streamlit as st
 
 # Add a big title to the page
-st.title("LLM V2 Results")
+st.title("Finetuned LLM Round 2")
 
-st.markdown(
-    """
-    <a href="https://ai-feedback-dashboard-e8xsakdarzdtr5xs5iycle.streamlit.app/" target="_blank">
-        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
-             View V1LLM Results
-        </button>
-    </a>
-    """,
-    unsafe_allow_html=True
-)
 
 # Load data
 @st.cache_data
@@ -376,3 +366,16 @@ with col2:
 # Display optimal thresholds and F1 score with formatting
 st.markdown(f"### Optimal Thresholds: {optimal_thresholds}")
 st.markdown(f"### Maximum F1 Score: {max_f1:.4f}")
+
+
+
+st.markdown(
+    """
+    <a href="https://ai-feedback-dashboard-e8xsakdarzdtr5xs5iycle.streamlit.app/" target="_blank">
+        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+             View V1LLM Results
+        </button>
+    </a>
+    """,
+    unsafe_allow_html=True
+)
